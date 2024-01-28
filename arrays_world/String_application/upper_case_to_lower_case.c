@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int i;
+    char arr[50];
+
+    printf("Enter the string \n");
+    gets(arr);
+    printf("Before convrting to uppercse \n");
+    puts(arr);
+
+    for(i=0;arr[i]!='\0';i++)
+    {
+        if(arr[i]>=65 && arr[i]<=90)
+        {
+            arr[i]=arr[i]+32;
+        }
+    }
+    printf("The string after convertion is \n");
+    puts(arr);
+    
+    return 0;
+}
